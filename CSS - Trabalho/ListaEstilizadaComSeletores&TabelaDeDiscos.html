@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListaEstilizada&TabelaDeDiscos</title>
+    <style>
+
+       #sertanejo{
+      
+        color: rgb(253, 190, 17);
+        }
+       
+            
+        #sertanejo :hover{
+        color: rgb(199, 92, 31);
+        }   
+    
+         
+        #funk{
+            color: rgb(54, 102, 39);   
+           
+        }
+        #funk :hover{
+            color: rgb(6, 255, 6);
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+        th, td{
+            border: 1px solid;
+            padding: 10px;   
+        }
+    
+        #tabela{
+            background-color: rgb(36, 36, 102);
+           
+        }
+        #tabela:hover{
+            background-color:rgb(25, 104, 124);
+            color: rgb(249, 248, 253);
+            transition: background-color 0.4s;
+            transform: scale(1);
+            box-shadow: 5px 5px 10px ;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h2> Lista dos Artista </h2>
+    <ol>
+        <li>Sertanejo</li>
+<div>
+    </ol>
+    <div>
+        <ul id="sertanejo"> 
+        <li> Leo Foguete </li>
+        <li> Gustavo lima </li>
+        <li>Ana Castela</li>
+    </ul>
+    </div>
+</div>
+    <ol start="2">
+        <li> Funk</li>
+    </ol >
+    <ul id="funk">
+        <li>Tutu</li>
+        <li>Mc Ryan</li>
+        <li>Mc Kevin</li>
+    </ul><br>
+
+    <h2> Tabela dos artista </h2>
+
+    <caption> Tabela dos Artista</caption>
+
+    <table>
+        <thead>
+            <tr id="tabela">
+                <td>Nome do Artista</td>
+                <td>Nome do album</td>
+                <td>Ano do lançamento </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tutu</td>
+                <td>2T na Levada </td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Mc Ryan</td>
+                <td>Bad Boys</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Mc Kevin</td>
+                <td>Presenting</td>
+                <td>2025</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
+</html>
