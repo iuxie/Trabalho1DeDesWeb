@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRÓXIMOS SHOWS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        /* Container da agenda de shows */
+        .agenda {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 3fr; 
+            width: 80%;
+            max-width: 1200px;
+            border: 1px solid black;
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.5;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 02);
+            transition: all 0.3s ease;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        
+        .header {
+            display: contents; 
+            background-color: black;
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+        
+        }
+        
+        .header div {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white
+        }
+        
+        .row {
+            display: contents; 
+            transition: background-color 0.3s ease; 
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            line-height: 1.5;
+            transition: all 0.3s ease;
+            padding : 10px;
+        }
+        
+        .row div {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+           
+        
+        }
+        
+        .row:nth-child(even) {
+            background-color: red;
+            color: white; 
+        }
+        
+        
+        .row:hover {
+            background-color: aqua;
+            color: green;
+            cursor:pointer;
+            font: bold;
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .agenda {
+                width: 90%;
+            }
+        
+            .header div, .row div {
+                padding: 8px;
+                font-size: 18px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .agenda {
+                width: 100%;
+            }
+            .header div, .row div {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="agenda">
+        <div class="header">
+            <div>Data</div>
+            <div>Cidade</div>
+            <div>Local</div>
+            <div>Artista</div>
+        </div>
+        <div class="row">
+            <div>01/05/2025</div>
+            <div>São Paulo</div>
+            <div>Espaço das Américas</div>
+            <div>Eminem</div>
+        </div>
+        <div class="row">
+            <div>02/05/2025</div>
+            <div>Rio de Janeiro</div>
+            <div>Maracanã</div>
+            <div>Eminem</div>
+        </div>
+        <div class="row">
+            <div>03/05/2025</div>
+            <div>Brasília</div>
+            <div>Estádio Nacional</div>
+            <div>Eminem</div>
+        </div>
+        <div class="row">
+            <div>04/05/2025</div>
+            <div>Salvador</div>
+            <div>Arena Fonte Nova</div>
+            <div>Eminem</div>
+        </div>
+        <div class="row">
+            <div>05/05/2025</div>
+            <div>Belo Horizonte</div>
+            <div>Mineirão</div>
+            <div>Eminem</div>
+        </div>
+        <div class="row">
+            <div>06/05/2025</div>
+            <div>Curitiba</div>
+            <div>Arena da Baixada</div>
+            <div>Eminem</div>
+        </div>
+        <div class="row">
+            <div>07/05/2025</div>
+            <div>Fortaleza</div>
+            <div>Estádio Castelão</div>
+            <div>Eminem</div>
+        </div>
+        <div class="row">
+            <div>08/05/2025</div>
+            <div>Porto Alegre</div>
+            <div>Beira-Rio</div>
+            <div>Eminem</div>
+        </div>
+        <div class="row">
+            <div>09/05/2025</div>
+            <div>Recife</div>
+            <div>Arruda</div>
+            <div>Eminem</div>
+        </div>
+        <div class="row">
+            <div>10/05/2025</div>
+            <div>Manaus</div>
+            <div>Arena da Amazônia</div>
+            <div>Eminem</div>
+        </div>
+    </div>
+</body>
+</html> 
